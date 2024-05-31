@@ -14,7 +14,7 @@
     </head>
 <body class="sb-nav-fixed">
 
-    <?php include('includes/navbar-top.php'); ?>
+    <?php include('navbar-top.php'); ?>
         <div id="layoutSidenav">
             <?php include('includes/sidebar.php'); ?>
 
