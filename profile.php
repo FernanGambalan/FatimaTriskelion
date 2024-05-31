@@ -1,12 +1,12 @@
-<?php 
-    session_start();
-    include('includes/header.php');
-?>
 <?php
- include('includes/slider-img.php');
+    include('admin/config/dbconnect.php');
+    include('admin/authentication.php');
+    include('admin/includes/header.php');
+    
 ?>
 
+
 <?php 
-    include('includes/footer.php');
-    include('includes/script.php');
+    include('admin/includes/footer.php');
+    include('admin/includes/script.php');
 ?>
