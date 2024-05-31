@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
     include('config/dbconnect.php');
     include('authentication.php');
     include('includes/header.php');

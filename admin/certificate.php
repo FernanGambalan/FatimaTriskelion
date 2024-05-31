@@ -1,5 +1,5 @@
 <?php
-    session_start();
+   
     include ('../admin/config/dbconnect.php');
     include('authentication.php');
 ?>
@@ -16,8 +16,7 @@
                         foreach($editform_run as $editforms)
                             
                             { 
-                            $result = $editforms['fName'] . "  " . $result = $editforms['alias'] . "  ". $result = $editforms['lName'];
-                            header('content-type:image/jpeg');
+                            $result = $editforms['fName'] . "  " .  " '"  .$result = $editforms['alias'] . "' " .  "  ". $result = $editforms['lName'];        
                             $font ="certificate/GreatVibes-Regular.ttf";
                             $image=imagecreatefromjpeg('certificate/CertificateofAppreciation.jpg');
                             $color =imagecolorallocate($image,50,52,52);
@@ -28,9 +27,11 @@
                             $txt_h = $box[3] - $box[1];
                             $x = (3500 - $txt_w) / 2 ;
                             $y = (2600 - $txt_h) /2 ;
-                            imagettftext($image,$fontSize,0,$x,$y,$color,$font,$result);
+                            header('content-type:image/jpeg');
+                            imagettftext($image, $fontSize, 0, $x, $y, $color, $font, $result);
                             imagejpeg($image);
                             imagedestroy($image);
+                              
                             }
                             
                         }

@@ -1,6 +1,5 @@
-
 <div class="container-fluid px-4">
-        <h1  class="mt-4 text-uppercase">WELCOME <?= $_SESSION['auth_users']['usersFullname']; ?></h1>
+        <h1  class="mt-4 text-uppercase">WELCOME</h1>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item active">FATIMA TRISKELION ADMIN PANEL</li>
             </ol>

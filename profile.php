@@ -2,8 +2,11 @@
     session_start();
     include('includes/header.php');
 ?>
+<?php
+ include('includes/slider-img.php');
+?>
 
 <?php 
-    session_start();
     include('includes/footer.php');
+    include('includes/script.php');
 ?>

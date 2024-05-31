@@ -1,7 +1,6 @@
 <?php 
     include('config/dbconnect.php');
-    include('includes/header.php');
-    
+    include('includes/header.php');    
 ?>
 <?php
     include('includes/admin-navbar.php');
