@@ -5,6 +5,10 @@
 <?php
     include('includes/admin-navbar.php');
 ?>
+<div class="table-responsive px-4">    
+  
+</div>
+
 <div class="table-responsive px-4">
                     <table class="table table-bordered table-hover table-dark">
                     <thead>
